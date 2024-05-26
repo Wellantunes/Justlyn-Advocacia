@@ -7,6 +7,7 @@
   font-family: 'Playfair Display', sans-serif;
   list-style: none;
   text-decoration: none;
+  scroll-behavior: smooth;
 }
 
 header {
@@ -19,7 +20,7 @@ header {
   justify-content: space-between;
   padding: 0 240px;
   background-color: #272d3467;
-  z-index: 1;
+  z-index: 5;
 }
 
 .logo {
@@ -45,7 +46,7 @@ header {
   color: #cdba6d;
 }
 
-nav {
+nav  {
   width: 60%;
 }
 
@@ -56,7 +57,7 @@ ul {
   justify-content: space-between;
 }
 
-li {
+li a{
   font-size: 1.1rem;
   font-family: 'Poppins', sans-serif;
   color: #fff;
@@ -77,12 +78,12 @@ li:hover{
 }
 
 #menu-icon {
-  display: none;
-  font-size: 2rem;
-  color: #fff;
+  font-size: 35px;
+  z-index: 10001;
   cursor: pointer;
+  display: none;
+  color: #fff;
 }
-
 .modal {
   width: 100%;
   height: 130vh;
@@ -92,6 +93,10 @@ li:hover{
   right: 0;
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.5);
+}
+
+.navlist a {
+  transition: all .50s ease;
 }
 
 .home-container {
@@ -140,7 +145,7 @@ li:hover{
 }
 
 .presentation-container button {
-  width: 150px;
+  width: 200px;
   height: 50px;
   background-color: #cdba6d;
   color: #000;
@@ -161,7 +166,7 @@ li:hover{
   height: 300px;
   padding: 0 100px;
   position: absolute;
-  top: 115vh;
+  top: 135vh;
 }
 
 .destaks-content {
@@ -300,7 +305,7 @@ li:hover{
 }
 
 .signature-button-container button {
-  width: 150px;
+  width: 200px;
   height: 50px;
   background-color: #cdba6d;
   color: #000;
@@ -827,7 +832,33 @@ footer {
   }
 }
 
-@media (max-width: 1280px) {
+@media (max-width: 1240px) {
+  #menu-icon {
+    display: block;
+}
+.navlist {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    width: 255px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.723);
+    transition: all .50s ease;
+    
+
+}
+
+.navlist a {
+    display: block;
+    padding: 17px;
+    font-size: 16px;
+} 
+
+.navlist.active {
+    right: 0;
+}
   header {
     padding: 0 40px;
   }
@@ -858,6 +889,10 @@ footer {
   .content {
     padding: 0 60px;
   }
+
+  #menu-icon {
+    display: block;
+}
   
   #square-3 {
     padding: 0 40px;
@@ -886,14 +921,6 @@ footer {
 }
 
 @media(max-width: 835px) {
-
-  nav {
-    display: none;
-  }
-
-  #menu-icon {
-    display: block;
-  }
 
   .home-container {
     background-position: 70% 50%;
@@ -1003,6 +1030,7 @@ footer {
 
 @media (max-width: 768px) {
 
+
   .welcome-container {
     height: 180vh;
   }
@@ -1024,6 +1052,7 @@ footer {
 }
 
 @media (max-width: 600px) {
+  
 
   .welcome-container {
     height: 240vh;
@@ -1147,7 +1176,9 @@ footer {
   }
 
   .testimonials-title h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
+    align-items: center;
+    
   }
 
   .cards {
@@ -1197,3 +1228,4 @@ footer {
   }
 
 }
+

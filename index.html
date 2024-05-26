@@ -6,7 +6,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Justly</title>
   <link rel="stylesheet" href="./styles.css">
+
   <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
+    
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /><!-- Link para menu Resposive Funcionar -->
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"> 
+
+  <link
+  href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+  rel="stylesheet"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"> <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https: //fonts.googleapis.com/css2?family=Inter:slnt,wght@-10..0,875&family=Noto+Sans+Display:ital,wdth,wght@0,92.7,762;1,92.7,762&family=Playfair +Display:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,80 0;1.900 &display=swap" rel="folha de estilo">
+
 </head>
 <body>
   <header>
@@ -19,31 +31,31 @@
     </a>
 
     <nav>
-      <ul>
-        <li>Inicio</li>
-        <li>Paginas</li>
-        <li>Advogados</li>
-        <li>Áreas de atuação</li>
-        <li>Contate-nos</li>
+      <ul class="navlist">
+        <li><a href="#home-container">Inicio</li></a>
+        <li><a href="#welcome-container">Sobre</li></a>
+        <li><a href="#our-services-container">Áreas De atuação</li></a>
+        <li><a href="#testimonials-container">Depoimentos</li></a>
+        <li> <a href="#form-container">Contate-nos</li></a>
         <i class="fa-solid fa-magnifying-glass" id="search-icon"></i>
       </ul>
     </nav>
 
-    <i class="fa-solid fa-bars" id="menu-icon"></i>
+    <div class="bx bx-menu" id="menu-icon"></div>
 
   </header>
 
   <div class="modal"></div>
 
-  <section class="home-container">
-    <div class="presentation-container">
+  <section class="home-container" id="home-container">
+    <div class="presentation-container" data-aos="zoom-in-up">
       <h3>Um sistema jurídico melhor</h3>
       <h1>Bem-vindo ao <span>Justly o Melhor</span> Escritório de advocacia</h1>
       <p>
         Somos o melhor escritório de advocacia no setor familiar e empresarial. Com mais de 15
         anos de experiência nesta área, então você pode esperar melhores serviços.
       </p>
-      <button>consulte Mais informação</button>
+      <button>Consulte Mais Informação</button>
     </div>
   </section>
   
@@ -55,7 +67,7 @@
         <div class="divider"></div>
         <p class="destaks-paragraph">
           Nossos advogados darão
-          você aconselhamento jurídico
+          você aconselhamento jurídico.
         </p>
       </div>
       <div class="content" id="square-2">
@@ -64,7 +76,7 @@
         <div class="divider" id="divider-white"></div>
         <p class="destaks-paragraph">
           Advogado qualificado que
-          você pode confiar
+          você pode confiar, Com consulturia Pessoal.
         </p>
       </div>
       <div class="content" id="square-3">
@@ -72,14 +84,14 @@
         <span class="destaks-span">Conselho de profissional</span>
         <div class="divider"></div>
         <p class="destaks-paragraph">
-          Advogado ajuda você a fazer
-          a melhor decisão
+          Advogados ajuda você a fazer
+          a melhor decisão.
         </p>
       </div>
     </div>
   </div>
 
-  <section class="welcome-container">
+  <section class="welcome-container" id="welcome-container">
 
     <div class="signature-container">
       <div class="signature-content">
@@ -112,7 +124,7 @@
 
   </section>
 
-  <section class="our-services-container">
+  <section class="our-services-container" id="our-services-container">
 
     <div class="our-services-title">
       <h2>NOSSOS SERVIÇOS</h2>
@@ -207,11 +219,11 @@
     </div>
   </section>
 
-  <section class="testimonials-container">
+  <section class="testimonials-container" id="testimonials-container">
 
     <div class="testimonials-title">
       <h2>DEPOIMENTOS</h2>
-      <h1>O que os clientes dizem</h1>
+      <h1>O que os Clientes dizem</h1>
       <div class="divider" id="our-services-divider"></div>
     </div>
 
@@ -238,7 +250,7 @@
         <div class="testimonial-img" id="testimonial-3"></div>
         <i class="fa-solid fa-quote-left" id="testimony-icon"></i>
         <p class="testimony">
-          “Como empresário, lido constantemente com questões legais e regulatórias. O Justly Advocacia se tornou nosso parceiro estratégico. Eles nos assessoram em fusões, aquisições e questões tributárias. Sua abordagem proativa e conhecimento profundo do mercado financeiro fazem toda a diferença. Contratar o Justly foi a melhor escolha que fizemos.”                        
+          “Como empresário, lido constantemente com questões legais e regulatórias. O Justly Advocacia se tornou nosso parceiro estratégico. Aquisições e questões tributárias. Sua abordagem proativa e conhecimento profundo do mercado financeiro fazem toda a diferença. Contratar o Justly foi a melhor escolha que fizemos.”                        
         </p>
         <h2 class="testimonial-name">Sara kennel</h2>
         <span class="testimonial-profession">Empresário</span>
@@ -247,7 +259,7 @@
 
   </section>
 
-  <section class="form-container">
+  <section class="form-container" id="form-container">
     <div class="form-img"></div>
     <div class="form-content">
 
@@ -291,7 +303,7 @@
       <div class="about-text">
         <h2>SOBRE NÓS</h2>
         <P>
-          Maecenas auctor blandit consectetur. Etiam et tellus vulputate, interdum velit eget, gravida metus. Donec porttitor dolor et arcu semper, eget pulvinar mauris volutpat.
+          Justly Advocacia: Defendendo Seus Direitos com Justiça.
         </P>
         <div class="social-media">
           <i class="fa-brands fa-facebook-f" id="facebook-icon"></i>
@@ -348,7 +360,17 @@
             WELLINGTON ANTUNES
     </span>
   </div>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   
   <script src="https://kit.fontawesome.com/a747b09475.js" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+
+  <script>
+    AOS.init({
+      offset: 300,
+      duration: 1400,
+    });
+  </script>
+
 </body>
 </html>
